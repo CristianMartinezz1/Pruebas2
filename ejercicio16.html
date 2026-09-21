@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora con Funciones Flecha</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="CSS/ejercicio16.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Calculadora Básica</h2>
+        
+        <div class="form-group">
+            <label for="numero1">Número 1:</label>
+            <input type="text" id="numero1" placeholder="Ej. 10">
+        </div>
+
+        <div class="form-group">
+            <label for="numero2">Número 2:</label>
+            <input type="text" id="numero2" placeholder="Ej. 5">
+        </div>
+
+        <div class="form-buttons">
+            <button onclick="calcularOperacion('sumar')">+</button>
+            <button onclick="calcularOperacion('restar')">-</button>
+            <button onclick="calcularOperacion('multiplicar')">&times;</button>
+            <button onclick="calcularOperacion('dividir')">&divide;</button>
+        </div>
+
+        <div class="form-group" style="margin-top: 15px;">
+            <label for="resultado">Resultado:</label>
+            <input type="text" id="resultado" readonly placeholder="Resultado">
+        </div>
+       <div class="form-group" style="margin-top: 25px;">
+            <a href="index.html" class="btn-regresar">Regresar al Menú</a>
+        </div>
+    </div>
+
+    <script src="JS/ejercicio16.js"></script>
+</body>
+</html>
