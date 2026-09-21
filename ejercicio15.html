@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Estudiantes y Calificaciones</title>
+    
+    <link rel="stylesheet" href="CSS/ejercicio15.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Gestión de Estudiantes</h2>
+        
+        <div class="form-group">
+            <label for="inputNombre">Nombre del Estudiante:</label>
+            <input type="text" id="inputNombre" placeholder="Ej. Juan">
+        </div>
+
+        <div class="form-group">
+            <label for="inputCalificacion">Calificación:</label>
+            <input type="text" id="inputCalificacion" placeholder="Ej. 85">
+            <div id="mensajeError">Por favor, completa los campos correctamente (calificación numérica).</div>
+            <div id="mensajeExito" style="display: none; color: #000; font-style: italic; font-size: 0.75rem; margin-top: 5px;">¡Estudiante agregado con éxito!</div>
+        </div>
+
+        <div class="form-group">
+            <button id="btnAgregar">Agregar estudiante</button>
+        </div>
+
+        <div class="form-group">
+            <button id="btnCalcular">Calcular</button>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid #000; margin: 20px 0;">
+
+        <div class="form-group">
+            <label for="outputPromedio">Calificación Promedio:</label>
+            <input type="text" id="outputPromedio" readonly placeholder="Resultado">
+        </div>
+
+        <div class="form-group">
+            <label for="outputAlta">Calificación Más Alta (Estudiante):</label>
+            <input type="text" id="outputAlta" readonly placeholder="Resultado">
+        </div>
+
+        <div class="form-group">
+            <label for="outputBaja">Calificación Más Baja (Estudiante):</label>
+            <input type="text" id="outputBaja" readonly placeholder="Resultado">
+        </div>
+      <div class="form-group" style="margin-top: 25px;">
+            <a href="index.html" class="btn-regresar">Regresar al Menú</a>
+        </div>
+    </div>
+
+
+    <script src="JS/ejercicio15.js"></script>
+</body>
+</html>
